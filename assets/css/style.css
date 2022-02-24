@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+
+* {
+     box-sizing: border-box;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+     font-family: 'Quicksand', sans-serif;
+     background-color: #8d99ae;
+}
+
+header {
+     display: inline;
+     text-align: left;
+}
+
+header nav {
+     top: 0;
+     padding: 5px;
+     position: sticky;
+     background-color: #ef233c;
+}
+
+header nav li {
+     display: inline;
+     list-style-type: none;
+     margin-right: 15px;
+}
+
+header nav a {
+     font-size: 18px;
+     font-weight: 400;
+     text-decoration: none;
+     color: white;
+}
+
+main {
+     padding: 20px;
+     overflow: auto;
+}
+
+main #content {
+     float: left;
+     width: 70%;
+}
+
+main aside {
+     float: right;
+     width: 30%;
+     padding-left: 20px;
+}
+
+main aside section img {
+     padding: 10px;
+}
+
+h2 {
+     color: #2b2d42;
+}
+
+h3 {
+     text-align: center;
+}
+
+footer {
+     padding: 10px;
+     color: white;
+     background-color: #ef233c;
+     text-align: center;
+}
+
+.rounded {
+     border-radius: 50%;
+     width: 100%;
+}
+
+.card {
+     margin-top: 15px;
+     padding: 25px;
+     border-radius: 5px;
+     background-color: #edf2f4;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.paket-image {
+     width: 100%;
+     max-height: 500px;
+     object-fit: cover;
+     object-position: center;
+}
+
+@media screen and (max-width: 1000px) {
+
+     main #content,
+     main aside {
+          width: 100%;
+          padding: 0;
+     }
+}
